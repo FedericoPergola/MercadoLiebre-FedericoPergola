@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo"> 
+                <a href="/"><img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                </div></a>
+            <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos, marcas y más</div>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div>
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav>
+            <div>
+            <ul class="lista1">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            </div> 
+            <div>
+            <ul class="lista2">
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+    
+<form action="/views/register.html" method="POST">
+    <div class="nombre">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+    </div>
+    <div class="nombre-de-usuario">
+        <input type="text" name="nombre de usuario" id="nombre de usuario" placeholder="Nombre de Usuario">
+    </div>
+    
+    <div class="fecha-de-nacimiento">
+        <label for="fecha de nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha de naciemiento">
+    </div>
+    
+    <div class="domicilio">
+        <input type="text" name="domicilio" placeholder="Domicilio">
+    </div>
+    <div class="perfil-de-usuario">
+        <label> Perfil del usuario:</label>
+        <label class="perfil-de-usuario_label" for="Perfil del usuario"> <input type="radio" name="Perfil del usuario"> Comprar</label>
+        <label class="perfil-de-usuario_label" for="Perfil del usuario"> <input type="radio" name="Perfil del usuario"> Vender</label>
+        </div>
+    <div class="interes">
+        <label>Interes:</label>
+        <label for="interes"><input type="checkbox" name="interes">Electro</label>
+        <label for="interes"><input type="checkbox" name="interes">Moda</label>
+        <label for="interes"><input type="checkbox" name="interes">Hogar</label>
+        <label for="interes"><input type="checkbox" name="interes">Jugueteria</label>
+        <label for="interes"><input type="checkbox" name="interes">Vida Sana</label>
+       
+    </div>
+    <div>
+        <input type="password" name="pasword" placeholder="Contraseña">
+    </div>
+    <p></p>
+    <div class="foto de perfil">
+        <label> Seleccionar una foto de perfil:</label>
+        <p></p>
+        <input type="file">
+    </div>
+    <p></p>
+    
+
+    <div class="Btn">
+        <a href="/home"><button>Volver a la pagina principal</button></a>
+    </div>
+    <div class="Btn2">
+        <button type="reset">Borrar Formulario</button>
+    </div>
+       
+    
+    </form>
+</body>
+<footer>
+    <div class="footer">
+        <i class="fas fa-credit-card"></i>
+        <h4> Paga con tarjeta o en efectivo</h3>
+        <p>Con MercadoLiebreCash...</p>
+    </div>
+    <div class="footer">
+        <i class="fas fa-gift"></i>
+        <h4> Paga con tarjeta o en efectivo</h3>
+        <p>Con MercadoLiebreCash...</p>
+    </div>
+    <div class="footer">
+       
+        <i class="fas fa-user-shield"></i>
+        <h4> Paga con tarjeta o en efectivo</h3>
+        <p>Con MercadoLiebreCash...</p>
+    </div>
+
+
+</footer>
+</html>
